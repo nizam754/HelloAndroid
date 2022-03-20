@@ -11,38 +11,39 @@
     android:padding="20dp"
     >
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Beauty of Bangladesh"
-        android:textSize="35sp"
-        android:textColor="#000000"
-        android:gravity="center"
-        />
-    
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:src="@drawable/cover_image"
-        android:scaleType="centerCrop"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        />
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:weightSum="3"
+        >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Bangladesh, country of south-central Asia, located in the delta of the Padma (Ganges [Ganga]) and Jamuna (Brahmaputra) rivers in the northeastern part of the Indian subcontinent. The riverine country of Bangladesh (“Land of the Bengals”) is one of the most densely populated countries in the world, and its people are predominantly Muslim."
-        android:textSize="20sp"
-        android:textColor="#000000"
-        android:gravity="left"
-        android:layout_marginBottom="10dp"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Click here to know more"
-        />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="Button"
+            android:layout_weight="1"
+
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="This is logn button"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="Button"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
 
 
 </LinearLayout>
